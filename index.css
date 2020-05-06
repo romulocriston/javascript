@@ -114,7 +114,7 @@ html,body{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
 }
 /* TAMANHO DO CABEÇALHO EM 100% DA DIV PAI (PRINC) E COM TAMANHO MÍNIMO DE 420PX, COR AZUL DE FUNDO, CENTRALIZADO NA PÁGINA, ESPAÇAMENTO INTERNO DE 20PX E OS LNKS (A) ALINHADO AO MEIO */
-header{
+.header{
     box-sizing: border-box;
     width: 100%;
     min-width: 428px;
@@ -122,11 +122,9 @@ header{
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    
-    
 }
 /* OS LNKS (A) CONVERTIDO PARA MAIUSCULAS, COR BRANCA DO TEXTO, SEM SUBLINADO EMBAIXO DOS LINKS, ESPAÇAMENTO EXTERNO (CIMA E ABAIXO) 0 E (ESQUERDA E DIRETA) COM 15PX, APLICADO BORDA SOMENTE DO LADO DIREITO DE 1PX SÓLIDA E COR BRANCA E UM ESPAÇAMENTO INTERNO DO LADO DIREITO DE 40PX */
-header > a{
+.header > a{
     text-transform: uppercase;
     color: white;
     text-decoration: none;
