@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- SÃO CRIADOS 5 DIVS FIXAS QUE FICARÁ DO LADO ESQUERDO DA PÁGINA, SENDO:
+            1 MENU-BOX - POSIÇÃO FIXA QUE CONTERÁ 4 DIVS FILHAS DENTRO DELA:
+                2 MENU-HOME - POSIÇÃO FIXA 10PX ABAIXO DA DIV PAI (BOX)
+                3 MENU-HTML - POSIÇÃO FIXA 10PX ABAIXO DA DIV MENU-HOME
+                4 MENU-CSS - POSIÇÃO FIXA 10PX ABAIXO DA DIV MENU-HTML
+                5 MENU-JS - POSIÇÃO FIXA 10PX ABAIXO DA DIV MENUCSS  -->
+    <div class="menu-box">
+        <div id="menu-home">
+            <p id="p-home" onmousemove="menuHome();" onmouseout="sair();">
+                <a href="position-menu-resp.html">HOME</a></p>
+        </div>
+        <div id="menu-html">
+            <p id="p-html" onmousemove="menuHtml5();" onmouseout="sair();">
+                <a href="pagehtml.html">HTML5</a></p>
+        </div>
+        <div id="menu-css">
+            <p id="p-css" onmousemove="menuCss();" onmouseout="sair();">
+                <a href="pagecss.html">CSS3</a></p>
+        </div>
+        <div id="menu-js">
+            <p id="p-js" onmousemove="menuJS();" onmouseout="sair();">
+                <a href="pagejs.html">JAVASCRIPT</a></p>
+        </div>
+    </div>
+    
+    <!-- CRIADA 01 DIV CHAMADA DE "PRINC" QUE CONTERÁ UM CABEÇALHO "HEADER" E 03 DIV FILHAS QUE CONTERÁ UMA IMAGEM  E UM TÍTULO CADA UMA  -->
+    <div class="princ">
+        <header>
+            <a href="position-menu-resp.html">home</a>
+            <a href="pagehtml.html">html 5</a>
+            <a href="cpagecss.html">css 3</a>
+            <a href="pagejs.html">javascript</a>
+        </header>
+
+        <div class="box">
+            <img src="img/html5.png" width="200">
+            <h5><span style="color:#E14000;">HTML</span> é a linguagem de marcação padrão para páginas da Web.</h5>
+        </div>
+        <div class="box">
+            <img src="img/CSS3_300.png" width="200">
+            <h5><span style="color:#2986E3;">CSS</span> é uma linguagem que descreve o estilo de um documento HTML.</h5>
+        </div>
+        <div class="box">
+            <img src="img/javaScript.png" width="200">
+            <h5><span style="color:#F7E018; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);">JavaScript</span> é a linguagem de programação do HTML e da Web.</h5>
+        </div>
+    </div>
+
+    <!-- FUNÇÕES JAVASCRIPT -->
+    <script>
+        /* Ao passar o mouse a opacidade passa a ser "1" aparecendo com o texto do parágrafo e o tamanho da div "menu" aumenta para "100px" */
+        function menuHome(){
+            var mhome = document.getElementById("p-home");
+            mhome.style.opacity = "1";
+            document.getElementById('menu-home').style.width = "105px";
+        }
+        function menuHtml5(){
+            var menuhome = document.getElementById("p-html");
+            menuhome.style.opacity = "1";
+            document.getElementById('menu-html').style.width = "105px";
+        }
+        function menuCss(){
+            var mContato = document.getElementById('p-css');
+            mContato.style.opacity = "1";
+            document.getElementById('menu-css').style.width = "105px";
+        }
+        function menuJS(){
+            var mjs = document.getElementById('p-js');
+            mjs.style.opacity = "1";
+            document.getElementById('menu-js').style.width = "105px";
+        }
+        
+        /* Ao retirar o mouse a opacidade volta a ser "0" sumindo com o texto do parágrafo e o tamanho das divs "menu" reduz para "10px" */
+        function sair(){
+            document.getElementById("p-home").style.opacity = "0";
+            document.getElementById('menu-home').style.width = "10px";
+
+            document.getElementById("p-html").style.opacity = "0";
+            document.getElementById('menu-html').style.width = "10px";
+
+            document.getElementById('p-css').style.opacity = "0";
+            document.getElementById('menu-css').style.width = "10px";
+
+            document.getElementById('p-js').style.opacity = "0";
+            document.getElementById('menu-js').style.width = "10px";
+        }
+    </script>
+</body>
+</html>

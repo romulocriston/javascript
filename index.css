@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* DIV COM POSIÇÃO FIXA DE 190PX DO TOPO E ENCOSTADA DO LADO ESQUERDO (LEFT = 0PX), LARGURA DE 30PX E ALTURA DE 170PX PARA CABER AS 3 DIV FILHAS, COR BRANCA E BORDA DE MEIO PIXEL */
+.menu-box{
+    box-sizing: border-box;
+    position: fixed;
+    top: 190px;
+    left: 0;
+    width: 30px;
+    height: 170px;
+    background-color: white;
+    border: 0.5px solid rgb(230, 230, 230);
+    
+}
+/* OS LINKS SEM SUBLINADOS E COR BRANCA */
+.menu-box a{
+    text-decoration: none;
+    color: white;
+
+}
+/* LINK COM ATRIBUTO QUE CONTÉM QQR PEDAÇO DO TEXTO COM "JS" A COR DO TEXTO FICARÁ PRETA */
+.menu-box a[href*="js"]{
+    color: black;
+}
+
+/* 1ª DIV FILHA QUE FICARÁ FIXADA 10 PX ABAIXO DA DIV PAI (MENU-BOX), E AFASTADO 10PX DO LADO ESQUERDO DA PÁGINA, COMO A DIV PAI TEM 30PX E AS FILHAS TEM ESTÃO AFASTADAS 10PX E POSSUEM TAMANHO DE 10PX, ELS FICARÃO BEM NO MEIO DA DIV PAI. ALTURA DE 30PX E COR DE FUNDO INDIGO */
+#menu-home{
+    position: fixed;
+    top: 200px;
+    left: 10px;
+    width: 10px;
+    height: 30px;
+    background-color: indigo;
+    
+}
+/* OS PRAGRAFOS DA DIV FICARÃO INVISÍVEL DEVIDO A OPACIDADE "0", TERÃO COR BRANCA, ALINHADO À DIREITA E ESPAÇAMENTO INTERNO NO TOPO DE 5.5PX E À DIREITA DE 5PX */
+#menu-home p{
+    opacity: 0;
+    color: white;
+    text-align: right;
+    padding-top: 5.5px;
+    padding-right: 5px;
+}
+
+/* 2ª DIV FILHA FICARÁ FIXADA 10 PX ABAIXO DA DIV HOME (MENU-HOME), POIS COMO A DIV ACIMA TEM ALTURA DE 30PX TEMOS QUE SOMAR A ALTURA MAIS O ESPAÇO DE 10PX, POR ISSO, A POSIÇÃO NO TOPO É DE: 200PX+30PX+10 = 240PX */
+#menu-html{
+    position: fixed;
+    top: 240px;
+    left: 10px;
+    width: 10px;
+    height: 30px;
+    background-color: #E14000;
+    
+}
+/* IDEM PARAGRAFO DA HOME */
+#menu-html p{
+    opacity: 0;
+    color: white;
+    text-align: right;
+    padding-top: 5.5px;
+    padding-right: 5px;
+
+}
+/* IDEM MENU DA HOME */
+#menu-css{
+    position: fixed;
+    top: 280px;
+    left: 10px;
+    width: 10px;
+    height: 30px;
+    background-color: #2986E3;
+    
+}
+/* IDEM PARAGRAFO DA HOME */
+#menu-css p{
+    opacity: 0;
+    color: white;
+    text-align: right;
+    padding-top: 5.5px;
+    padding-right: 5px;
+
+}
+/* IDEM MENU DA HOME */
+#menu-js{
+    position: fixed;
+    top: 320px;
+    left: 10px;
+    width: 10px;
+    height: 30px;
+    background-color: #F7E018;
+    
+}
+/* IDEM PARAGRAFO DA HOME */
+#menu-js p{
+    opacity: 0;
+    color: white;
+    text-align: right;
+    padding-top: 5.5px;
+    padding-right: 5px;
+
+}
+/* TAMANHO DA DIV EM 67% DA PÁGINA E NÃO AUMENTA, CENTRALIZADO NO MEIO DA PÁGINA, COR CINZA CLARO E UM BOX-SHADOW RIANDO UMA SOMBRA NA DIV "PRINC" */
+.princ{
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 67%;
+    background-color: rgb(221, 221, 221);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
+}
+/* TAMANHO DO CABEÇALHO EM 100% DA DIV PAI (PRINC) E COM TAMANHO MÍNIMO DE 420PX, COR AZUL DE FUNDO, CENTRALIZADO NA PÁGINA, ESPAÇAMENTO INTERNO DE 20PX E OS LNKS (A) ALINHADO AO MEIO */
+header{
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 428px;
+    background-color: #1A237E;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    
+    
+}
+/* OS LNKS (A) CONVERTIDO PARA MAIUSCULAS, COR BRANCA DO TEXTO, SEM SUBLINADO EMBAIXO DOS LINKS, ESPAÇAMENTO EXTERNO (CIMA E ABAIXO) 0 E (ESQUERDA E DIRETA) COM 15PX, APLICADO BORDA SOMENTE DO LADO DIREITO DE 1PX SÓLIDA E COR BRANCA E UM ESPAÇAMENTO INTERNO DO LADO DIREITO DE 40PX */
+header > a{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    border-right: 1px solid white;
+    padding-right: 40px;
+}
+
+/* TAMANHO DAS DIVS FILHAS DE 430PX E NÃO AUMENTA, VISUALIZADAS EM BLOCOS DE LINHA, ALTURA DE 350PX PARA CABER A IMAGEM E O TÍTULO, COR DE FUNDO BRANCO IGUAL A PÁGINA, BORDA INVISÍVEL (TRANSPARÊNCIA "0") DE 20PX PARA CRIAR UM ESPAÇO ENTRE AS IMAGENS, RETIRADO 6PX DA BORDAS DO LADO DIREITO, POIS, SÃO 3 DIVS, SENDO 1PX DE CADA ÇADO DE CADA DIV, POSICIONADOS NO CENTRO DA DIV, COM TAMANHO DE FONTE DE 50PX E ALINHADO NO TOPO.*/
+.box{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 430px;
+    height: 350px;
+    background-color: white;
+    border: 20px solid rgba(0, 0, 0, 0);
+    margin-right: -6px;
+    text-align: center;
+    font-size: 50px;
+    vertical-align: top;
+}
+
+h5{
+    font-size: 25px;
+}
