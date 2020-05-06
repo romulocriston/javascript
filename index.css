@@ -135,7 +135,25 @@ header > a{
     padding-right: 40px;
 }
 
-h3, .btnvoltar{
+/* TAMANHO DAS DIVS FILHAS DE 430PX E NÃO AUMENTA, VISUALIZADAS EM BLOCOS DE LINHA, ALTURA DE 350PX PARA CABER A IMAGEM E O TÍTULO, COR DE FUNDO BRANCO IGUAL A PÁGINA, BORDA INVISÍVEL (TRANSPARÊNCIA "0") DE 20PX PARA CRIAR UM ESPAÇO ENTRE AS IMAGENS, RETIRADO 6PX DA BORDAS DO LADO DIREITO, POIS, SÃO 3 DIVS, SENDO 1PX DE CADA ÇADO DE CADA DIV, POSICIONADOS NO CENTRO DA DIV, COM TAMANHO DE FONTE DE 50PX E ALINHADO NO TOPO.*/
+.box{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 430px;
+    height: 350px;
+    background-color: white;
+    border: 20px solid rgba(0, 0, 0, 0);
+    margin-right: -6px;
+    text-align: center;
+    font-size: 50px;
+    vertical-align: top;
+}
+
+h5{
+    font-size: 25px;
+}
+
+h1, .btnvoltar{
     text-align: center;
     margin: 20px;
 }
